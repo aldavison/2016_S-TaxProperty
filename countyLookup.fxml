@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="1.0" layoutY="46.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="396.0" AnchorPane.bottomAnchor="46.0">
+         <content>
+            <TableView prefHeight="625.0" prefWidth="374.0">
+               <columns>
+                  <TableColumn id="countyNumber" fx:id="countyNumber" prefWidth="75.0" text="Number" />
+                  <TableColumn id="countyName" fx:id="countyName" prefWidth="296.0" text="County" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <TextField id="countyToSearch" fx:id="countyToSearch" layoutX="67.0" layoutY="7.0" prefHeight="33.0" prefWidth="256.0" promptText="Enter County Name for search selection" />
+   </children>
+</AnchorPane>

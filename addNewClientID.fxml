@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="188.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button id="searchBtn" fx:id="searchBtn" layoutX="62.0" layoutY="118.0" mnemonicParsing="false" text="Continue" />
+      <Button id="cancelBtn" fx:id="cancelBtn" layoutX="229.0" layoutY="120.0" mnemonicParsing="false" text="Cancel" />
+      <TextField id="clientIDforSearch" fx:id="clientIDforSearch" layoutX="82.0" layoutY="63.0" promptText="Client ID for New Client" />
+      <Label alignment="TOP_LEFT" layoutX="4.0" layoutY="4.0" prefHeight="54.0" prefWidth="391.0" text="Enter the ID you wish to use for this New Client.   You may use up to 12 characters" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

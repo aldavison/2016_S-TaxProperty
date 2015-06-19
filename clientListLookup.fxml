@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="767.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView id="listClientsTableView" fx:id="listClientsTableView" layoutX="18.0" layoutY="98.0" prefHeight="669.0" prefWidth="621.0">
+        <columns>
+          <TableColumn id="clientIDcolumn" fx:id="clientIDcolumn" editable="false" prefWidth="83.0" text="Client ID" />
+          <TableColumn id="clientNameColumn" fx:id="clientNameColumn" editable="false" prefWidth="327.0" text="Client Name" />
+            <TableColumn id="clientCountyColumn" fx:id="clientCountyColumn" editable="false" prefWidth="103.0" text="County" />
+            <TableColumn id="clientInActiveColumn" fx:id="clientInActiveColumn" editable="false" prefWidth="99.0" resizable="false" text="Status" />
+        </columns>
+      </TableView>
+      <RadioButton id="clientListAllClientsRbtn" fx:id="clientListAllClientsRbtn" layoutX="457.0" layoutY="6.0" mnemonicParsing="false" selected="true" text="All Clients" />
+      <RadioButton id="clientListActiveClientsRbtn" fx:id="clientListActiveClientsRbtn" layoutX="455.0" layoutY="33.0" mnemonicParsing="false" text="Active Clients Only" />
+      <RadioButton id="clientListInActiveClientsRbtn" fx:id="clientListInActiveClientsRbtn" layoutX="455.0" layoutY="62.0" mnemonicParsing="false" text="Inactive Clients Only" />
+      <Label layoutX="343.0" layoutY="7.0" text="Display in list:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="DODGERBLUE" height="87.0" layoutX="332.0" layoutY="7.0" opacity="0.07" stroke="BLACK" strokeType="INSIDE" width="310.0" />
+      <Label layoutX="14.0" layoutY="6.0" text="Search List by Client Name:" />
+      <TextField id="clientLookupSearchText" fx:id="clientLookupSearchText" layoutX="13.0" layoutY="28.0" prefHeight="33.0" prefWidth="310.0" promptText="Begin typing to search" />
+   </children>
+</Pane>

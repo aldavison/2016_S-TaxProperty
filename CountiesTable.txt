@@ -1,0 +1,130 @@
+Table:  Counties
+*** this table could be made smaller by putting just the name and address columns in their own table
+**   but, everything else is either a key or required for each year
+** this table will have 159 rows for each year
+*** NOTE: it's not really that wide - just a tad bit wider than I like  ;)
+ReturnYear   tinyint  ** it needs 2 digits for the year
+CountyName char 15
+CountyNumber smallint ** it needs 3 digits since it goes to 159 (tiny only goes to 127)
+AssessorName char 50
+AssessorAddr1 char 50
+AssessorAddr2 char 50
+AssessorAddr3 char 50
+AssessorAddr4 char 50  *** city, state, zip on 1 line
+AssessorPhone char 20
+AssessorNotes char 50 *** could be a data type that holds something larger but it shouldn't be too large
+********** below here is where the factors are stored ** naming them based on the order they appear
+***   Year1 is the most current year
+Group1Year1Factor decimal (5,3)  ** making these all bigger than necessary because there is a rumor
+Group1Year2Factor decimal (5,3)		 **  of changes to state law in the future that may take these to 3 decimal places
+Group1Year3Factor decimal (5,3)
+Group1Year4Factor decimal (5,3)
+Group1Year5Factor decimal (5,3)
+Group1Year6Factor decimal (5,3)
+Group1Year7Factor decimal (5,3)
+Group1YearOlderFactor decimal (5,3) 
+
+Group2Year1Factor decimal (5,3)
+Group2Year2Factor decimal (5,3)
+Group2Year3Factor decimal (5,3)
+Group2Year4Factor decimal (5,3)
+Group2Year5Factor decimal (5,3)
+Group2Year6Factor decimal (5,3)
+Group2Year7Factor decimal (5,3)
+Group2Year8Factor decimal (5,3)
+Group2Year9Factor decimal (5,3)
+Group2Year10Factor decimal (5,3)
+Group2Year11Factor decimal (5,3)
+Group2YearOlderFactor decimal (5,3)
+
+Group3Year1Factor decimal (5,3)
+Group3Year2Factor decimal (5,3)
+Group3Year3Factor decimal (5,3)
+Group3Year4Factor decimal (5,3)
+Group3Year5Factor decimal (5,3)
+Group3Year6Factor decimal (5,3)
+Group3Year7Factor decimal (5,3)
+Group3Year8Factor decimal (5,3)
+Group3Year9Factor decimal (5,3)
+Group3Year10Factor decimal (5,3)
+Group3Year11Factor decimal (5,3)
+Group3Year12Factor decimal (5,3)
+Group3Year13Factor decimal (5,3)
+Group3Year14Factor decimal (5,3)
+Group3Year15Factor decimal (5,3)
+Group3Year16Factor decimal (5,3)
+Group3YearOlderFactor decimal (5,3)
+
+Group4Year1Factor decimal (5,3)
+Group4Year2Factor decimal (5,3)
+Group4Year3Factor decimal (5,3)
+Group4YearOlderFactor decimal (5,3)
+
+*** now, below is some stuff we really haven't even discussed but it goes 
+**      in this table because it can change each year
+FreePortExemption   boolean
+FreePortRawMaterial decimal (5,3)   *** these next factors are percentages (usually 20,40,60,80, or 100% exempt)
+FreePortFinished decimal (5,3)     
+FreePortShipped decimal (5,3)
+ContructionInProgress decimal (5,3)   *** also a percentage factor that can change each year
+
+*************
+CREATE TABLE COUNTYBYYEAR
+(RETURNYEAR SMALLINT NOT NULL,
+COUNTYNAME VARCHAR(25) NOT NULL,
+COUNTYNUMBER VARCHAR(4) NOT NULL,
+ASSESSORNAME VARCHAR(50),
+ASSESSORADDR1 VARCHAR(50),
+ASSESSORADDR2 VARCHAR(50),
+ASSESSORADDR3 VARCHAR(50),
+ASSESSORADDR4 VARCHAR(50),
+ASSESSORPHONE VARCHAR(25),
+ASSESSORNOTES VARCHAR(60),
+GROUP1YEAR1FACTOR DECIMAL(5,3) NOT NULL,
+GROUP1YEAR2FACTOR DECIMAL(5,3) NOT NULL,
+GROUP1YEAR3FACTOR DECIMAL(5,3) NOT NULL,
+GROUP1YEAR4FACTOR DECIMAL(5,3) NOT NULL,
+GROUP1YEAR5FACTOR DECIMAL(5,3) NOT NULL,
+GROUP1YEAR6FACTOR DECIMAL(5,3) NOT NULL,
+GROUP1YEAR7FACTOR DECIMAL(5,3) NOT NULL,
+GROUP1YEAROLDERFACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAR1FACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAR2FACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAR3FACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAR4FACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAR5FACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAR6FACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAR7FACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAR8FACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAR9FACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAR10FACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAR11FACTOR DECIMAL(5,3) NOT NULL,
+GROUP2YEAROLDERFACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR1FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR2FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR3FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR4FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR5FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR6FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR7FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR8FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR9FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR10FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR11FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR12FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR13FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR14FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR15FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAR16FACTOR DECIMAL(5,3) NOT NULL,
+GROUP3YEAROLDERFACTOR DECIMAL(5,3) NOT NULL,
+GROUP4YEAR1FACTOR DECIMAL(5,3) NOT NULL,
+GROUP4YEAR2FACTOR DECIMAL(5,3) NOT NULL,
+GROUP4YEAR3FACTOR DECIMAL(5,3) NOT NULL,
+GROUP4YEAROLDERFACTOR DECIMAL(5,3) NOT NULL,
+FREEPORTEXEMPTION SMALLINT DEFAULT 1 NOT NULL,
+FREEPORTRAWMATERIAL DECIMAL(5,3) NOT NULL,
+FREEPORTFINISHED DECIMAL(5,3) NOT NULL,
+FREEPORTSHIPPED DECIMAL(5,3) NOT NULL,
+CONTRUCTIONINPROGRESS DECIMAL(5,3) NOT NULL,
+LAST_EDIT TIMESTAMP,
+PRIMARY KEY (RETURNYEAR, COUNTYNUMBER))

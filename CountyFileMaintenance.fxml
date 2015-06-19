@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:id="countyFileMaintenance" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="723.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab fx:id="countyFileMaintenanceAssessor" text="Assessor Office Info">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="assessorOfficeName" layoutX="191.0" layoutY="38.0" prefHeight="33.0" prefWidth="438.0" promptText="Assessor Office Name" />
+                  <TextField fx:id="assessorAddressLine1" layoutX="165.0" layoutY="92.0" prefHeight="33.0" prefWidth="465.0" promptText="Assessor Address Line 1" />
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear" alignment="TOP_CENTER" layoutX="14.0" layoutY="4.0" prefHeight="23.0" prefWidth="653.0" text="show county name, number, and return year here" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="44.0" text="Assessor Office Name" />
+                  <Label layoutX="46.0" layoutY="98.0" text="Address Line 1" />
+                  <Label layoutX="3.0" layoutY="300.0" text="Notes" />
+                  <Button fx:id="CloseButton1" layoutX="631.0" layoutY="439.0" mnemonicParsing="false" text="Close" />
+                  <Label layoutX="46.0" layoutY="132.0" text="Address Line 2" />
+                  <TextField fx:id="assessorAddressLine2" layoutX="165.0" layoutY="126.0" prefHeight="33.0" prefWidth="465.0" promptText="Assessor Address Line 2" />
+                  <TextField fx:id="assessorAddressLine3" layoutX="165.0" layoutY="159.0" prefHeight="33.0" prefWidth="465.0" promptText="Assessor Address Line 3" />
+                  <Label layoutX="46.0" layoutY="165.0" text="Address Line 3" />
+                  <Label layoutX="46.0" layoutY="197.0" text="Address Line 4" />
+                  <TextField fx:id="assessorAddressLine4" layoutX="165.0" layoutY="192.0" prefHeight="33.0" prefWidth="465.0" promptText="Assessor Address Line 4" />
+                  <Label layoutX="31.0" layoutY="246.0" text="Phone Number(s)" />
+                  <TextField fx:id="assessorPhone" layoutX="165.0" layoutY="238.0" prefHeight="33.0" prefWidth="466.0" promptText="Assessor Office Telephone/Fax numbers" />
+                  <TextArea fx:id="assessorNotes" layoutX="55.0" layoutY="300.0" prefHeight="62.0" prefWidth="638.0" promptText="Notes / Comments" wrapText="true" />
+                  <Spinner layoutX="130.0" layoutY="439.0" prefHeight="33.0" prefWidth="123.0" />
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear116" alignment="TOP_CENTER" layoutX="22.0" layoutY="444.0" prefHeight="23.0" prefWidth="108.0" text="Return Year:" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="countyFileMaintenanceGroup1" text="Group 1">
+      <content>
+        <AnchorPane id="YearMinusOne" fx:id="YearMinusOne" disable="true" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear1" alignment="TOP_CENTER" prefHeight="23.0" prefWidth="653.0" text="show county name, number, and return year here" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="CloseButton16" layoutX="618.0" layoutY="436.0" mnemonicParsing="false" text="Close" />
+                  <Spinner id="ReturnYear" fx:id="ReturnYear" layoutX="121.0" layoutY="439.0" prefHeight="33.0" prefWidth="123.0" />
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear11" alignment="TOP_CENTER" layoutX="14.0" layoutY="444.0" prefHeight="23.0" prefWidth="108.0" text="Return Year:" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="369.0" layoutY="41.0" prefHeight="23.0" prefWidth="225.0" text="Schedule A - Group 1">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="97.0" prefHeight="23.0" prefWidth="170.0" text="Important Notice">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="6.0" layoutY="120.0" prefHeight="76.0" prefWidth="308.0" text="Factors shown may have been set as probable default values based upon information believed to be accurate." wrapText="true" />
+                  <Label layoutX="6.0" layoutY="205.0" prefHeight="76.0" prefWidth="308.0" text="You, the tax preparer, are responsible for ensuring the accuracy of this information.   Please edit as needed." wrapText="true" />
+                  <Label layoutX="403.0" layoutY="76.0" text="Year" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="498.0" layoutY="76.0" text="Factor" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField id="YearMinus1" fx:id="YearMinus1" editable="false" layoutX="394.0" layoutY="104.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus2" fx:id="YearMinus2" editable="false" layoutX="395.0" layoutY="141.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus3" fx:id="YearMinus3" editable="false" layoutX="395.0" layoutY="180.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus4" fx:id="YearMinus4" editable="false" layoutX="396.0" layoutY="217.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus5" fx:id="YearMinus5" editable="false" layoutX="395.0" layoutY="257.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus6" fx:id="YearMinus6" editable="false" layoutX="396.0" layoutY="294.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus7" fx:id="YearMinus7" editable="false" layoutX="396.0" layoutY="333.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinusOlder" fx:id="YearMinusOlder" editable="false" layoutX="397.0" layoutY="370.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus1Factor" fx:id="YearMinus1Factor" layoutX="496.0" layoutY="104.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus2Factor" fx:id="YearMinus2Factor" layoutX="496.0" layoutY="142.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus3Factor" fx:id="YearMinus3Factor" layoutX="496.0" layoutY="182.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus4Factor" fx:id="YearMinus4Factor" layoutX="496.0" layoutY="220.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus5Factor" fx:id="YearMinus5Factor" layoutX="496.0" layoutY="259.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus6Factor" fx:id="YearMinus6Factor" layoutX="496.0" layoutY="297.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus7Factor" fx:id="YearMinus7Factor" layoutX="496.0" layoutY="337.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinusOlderFactor" fx:id="YearMinusOlderFactor" layoutX="496.0" layoutY="375.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="countyFileMaintenanceGroup2" text="Group 2">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear2" alignment="TOP_LEFT" layoutX="4.0" layoutY="1.0" prefHeight="23.0" prefWidth="653.0" text="show county name, number, and return year here" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="CloseButton15" layoutX="636.0" layoutY="439.0" mnemonicParsing="false" text="Close" />
+                  <Spinner layoutX="122.0" layoutY="439.0" prefHeight="33.0" prefWidth="123.0" />
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear111" alignment="TOP_CENTER" layoutX="14.0" layoutY="444.0" prefHeight="23.0" prefWidth="108.0" text="Return Year:" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="353.0" layoutY="24.0" prefHeight="23.0" prefWidth="225.0" text="Schedule A - Group 2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="84.0" prefHeight="23.0" prefWidth="170.0" text="Important Notice">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="114.0" prefHeight="76.0" prefWidth="308.0" text="Factors shown may have been set as probable default values based upon information believed to be accurate." wrapText="true" />
+                  <Label layoutX="12.0" layoutY="187.0" prefHeight="76.0" prefWidth="308.0" text="You, the tax preparer, are responsible for ensuring the accuracy of this information.   Please edit as needed." wrapText="true" />
+                  <Label layoutX="403.0" layoutY="48.0" text="Year" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="498.0" layoutY="49.0" text="Factor" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField id="YearMinus1" fx:id="YearMinus1" editable="false" layoutX="395.0" layoutY="71.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus2" fx:id="YearMinus2" editable="false" layoutX="395.0" layoutY="105.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus3" fx:id="YearMinus3" editable="false" layoutX="395.0" layoutY="139.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus4" fx:id="YearMinus4" editable="false" layoutX="396.0" layoutY="173.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus5" fx:id="YearMinus5" editable="false" layoutX="395.0" layoutY="207.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus6" fx:id="YearMinus6" editable="false" layoutX="396.0" layoutY="241.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus7" fx:id="YearMinus7" editable="false" layoutX="396.0" layoutY="275.0" prefHeight="33.0" prefWidth="64.0" />
+
+                  <TextField id="YearMinus1Factor" fx:id="YearMinus1Factor" layoutX="497.0" layoutY="72.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus2Factor" fx:id="YearMinus2Factor" layoutX="496.0" layoutY="106.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus3Factor" fx:id="YearMinus3Factor" layoutX="496.0" layoutY="140.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus4Factor" fx:id="YearMinus4Factor" layoutX="496.0" layoutY="174.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus5Factor" fx:id="YearMinus5Factor" layoutX="496.0" layoutY="208.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus6Factor" fx:id="YearMinus6Factor" layoutX="496.0" layoutY="242.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus7Factor" fx:id="YearMinus7Factor" layoutX="496.0" layoutY="276.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+
+                  <TextField id="YearMinus8" fx:id="YearMinus8" editable="false" layoutX="397.0" layoutY="309.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus8Factor" fx:id="YearMinus8Factor" layoutX="497.0" layoutY="310.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus9" fx:id="YearMinus9" editable="false" layoutX="397.0" layoutY="343.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus9Factor" fx:id="YearMinus9Factor" layoutX="497.0" layoutY="344.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus10" fx:id="YearMinus10" editable="false" layoutX="397.0" layoutY="377.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus10Factor" fx:id="YearMinus10Factor" layoutX="497.0" layoutY="378.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus11" fx:id="YearMinus11" editable="false" layoutX="396.0" layoutY="411.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus11Factor" fx:id="YearMinus11Factor" layoutX="496.0" layoutY="412.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinusOlder" fx:id="YearMinusOlder" editable="false" layoutX="397.0" layoutY="445.0" prefHeight="33.0" prefWidth="64.0" promptText="older" />
+                  <TextField id="YearMinusOlderFactor" fx:id="YearMinusOlderFactor" layoutX="496.0" layoutY="446.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />                  
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="countyFileMaintenanceGroup3" text="Group 3">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear3" alignment="TOP_LEFT" prefHeight="46.0" prefWidth="379.0" text="show county name, number, and return year here" textAlignment="CENTER" textFill="#080a59" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="CloseButton14" layoutX="645.0" layoutY="439.0" mnemonicParsing="false" text="Close" />
+                  <Spinner layoutX="113.0" layoutY="439.0" prefHeight="33.0" prefWidth="123.0" />
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear112" alignment="TOP_CENTER" layoutX="8.0" layoutY="444.0" prefHeight="23.0" prefWidth="108.0" text="Return Year:" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="422.0" layoutY="2.0" prefHeight="23.0" prefWidth="225.0" text="Schedule A - Group 3">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="64.0" prefHeight="23.0" prefWidth="170.0" text="Important Notice">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="98.0" prefHeight="76.0" prefWidth="308.0" text="Factors shown may have been set as probable default values based upon information believed to be accurate." wrapText="true" />
+                  <Label layoutX="8.0" layoutY="174.0" prefHeight="76.0" prefWidth="308.0" text="You, the tax preparer, are responsible for ensuring the accuracy of this information.   Please edit as needed." wrapText="true" />
+                  <Label layoutX="386.0" layoutY="29.0" text="Year" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="459.0" layoutY="29.0" text="Factor" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField id="YearMinus1" fx:id="YearMinus1" editable="false" layoutX="376.0" layoutY="54.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus2" fx:id="YearMinus2" editable="false" layoutX="376.0" layoutY="88.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus3" fx:id="YearMinus3" editable="false" layoutX="376.0" layoutY="122.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus4" fx:id="YearMinus4" editable="false" layoutX="377.0" layoutY="156.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus5" fx:id="YearMinus5" editable="false" layoutX="376.0" layoutY="190.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus6" fx:id="YearMinus6" editable="false" layoutX="377.0" layoutY="224.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus7" fx:id="YearMinus7" editable="false" layoutX="377.0" layoutY="259.0" prefHeight="33.0" prefWidth="64.0" />
+
+                  <TextField id="YearMinus1Factor" fx:id="YearMinus1Factor" layoutX="457.0" layoutY="53.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus2Factor" fx:id="YearMinus2Factor" layoutX="456.0" layoutY="87.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus3Factor" fx:id="YearMinus3Factor" layoutX="456.0" layoutY="121.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus4Factor" fx:id="YearMinus4Factor" layoutX="456.0" layoutY="155.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus5Factor" fx:id="YearMinus5Factor" layoutX="456.0" layoutY="189.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus6Factor" fx:id="YearMinus6Factor" layoutX="456.0" layoutY="223.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus7Factor" fx:id="YearMinus7Factor" layoutX="456.0" layoutY="258.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+
+                  <TextField id="YearMinus8" fx:id="YearMinus8" editable="false" layoutX="378.0" layoutY="293.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus8Factor" fx:id="YearMinus8Factor" layoutX="457.0" layoutY="292.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus9" fx:id="YearMinus9" editable="false" layoutX="378.0" layoutY="327.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus9Factor" fx:id="YearMinus9Factor" layoutX="457.0" layoutY="326.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus10" fx:id="YearMinus10" editable="false" layoutX="378.0" layoutY="361.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus10Factor" fx:id="YearMinus10Factor" layoutX="457.0" layoutY="360.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus11" fx:id="YearMinus11" editable="false" layoutX="377.0" layoutY="395.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus11Factor" fx:id="YearMinus11Factor" layoutX="456.0" layoutY="394.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <Label layoutX="577.0" layoutY="29.0" text="Year" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="650.0" layoutY="29.0" text="Factor" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField id="YearMinus12" fx:id="YearMinus12" editable="false" layoutX="569.0" layoutY="53.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus12Factor" fx:id="YearMinus12Factor" layoutX="648.0" layoutY="52.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus13" fx:id="YearMinus13" editable="false" layoutX="569.0" layoutY="87.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus13Factor" fx:id="YearMinus13Factor" layoutX="648.0" layoutY="86.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus14" fx:id="YearMinus14" editable="false" layoutX="569.0" layoutY="121.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus14Factor" fx:id="YearMinus14Factor" layoutX="648.0" layoutY="120.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus15" fx:id="YearMinus15" editable="false" layoutX="569.0" layoutY="155.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus15Factor" fx:id="YearMinus15Factor" layoutX="648.0" layoutY="154.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus16" fx:id="YearMinus16" editable="false" layoutX="569.0" layoutY="189.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus16Factor" fx:id="YearMinus16Factor" layoutX="648.0" layoutY="188.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />                  
+                  <TextField id="YearMinusOlder" fx:id="YearMinusOlder" editable="false" layoutX="568.0" layoutY="223.0" prefHeight="33.0" prefWidth="64.0" promptText="older" />
+                  <TextField id="YearMinusOlderFactor" fx:id="YearMinusOlderFactor" layoutX="648.0" layoutY="222.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="countyFileMaintenanceGroup4" text="Group 4">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear4" alignment="TOP_CENTER" prefHeight="23.0" prefWidth="653.0" text="show county name, number, and return year here" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="CloseButton13" layoutX="645.0" layoutY="439.0" mnemonicParsing="false" text="Close" />
+                  <Spinner layoutX="122.0" layoutY="439.0" prefHeight="33.0" prefWidth="123.0" />
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear113" alignment="TOP_CENTER" layoutX="14.0" layoutY="444.0" prefHeight="23.0" prefWidth="108.0" text="Return Year:" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="316.0" layoutY="33.0" prefHeight="23.0" prefWidth="225.0" text="Schedule A - Group 4">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="403.0" layoutY="76.0" text="Year" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="498.0" layoutY="76.0" text="Factor" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField id="YearMinus1" fx:id="YearMinus1" editable="false" layoutX="394.0" layoutY="104.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus2" fx:id="YearMinus2" editable="false" layoutX="395.0" layoutY="142.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinus3" fx:id="YearMinus3" editable="false" layoutX="395.0" layoutY="180.0" prefHeight="33.0" prefWidth="64.0" />
+                  <TextField id="YearMinusOlder" fx:id="YearMinusOlder" editable="false" layoutX="396.0" layoutY="218.0" prefHeight="33.0" prefWidth="64.0" promptText="older" />
+                  <TextField id="YearMinus1Factor" fx:id="YearMinus1Factor" layoutX="496.0" layoutY="104.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus2Factor" fx:id="YearMinus2Factor" layoutX="496.0" layoutY="142.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinus3Factor" fx:id="YearMinus3Factor" layoutX="496.0" layoutY="181.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <TextField id="YearMinusOlderFactor" fx:id="YearMinusOlderFactor" layoutX="496.0" layoutY="220.0" prefHeight="33.0" prefWidth="63.0" promptText="Factor" />
+                  <Label layoutX="37.0" layoutY="114.0" prefHeight="23.0" prefWidth="170.0" text="Important Notice">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="146.0" prefHeight="76.0" prefWidth="308.0" text="Factors shown may have been set as probable default values based upon information believed to be accurate." wrapText="true" />
+                  <Label layoutX="8.0" layoutY="224.0" prefHeight="76.0" prefWidth="308.0" text="You, the tax preparer, are responsible for ensuring the accuracy of this information.   Please edit as needed." wrapText="true" />
+                  
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="countyFileMaintenanceConstruction" text="Construction ">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear5" alignment="TOP_CENTER" prefHeight="23.0" prefWidth="653.0" text="show county name, number, and return year here" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="CloseButton12" layoutX="632.0" layoutY="439.0" mnemonicParsing="false" text="Close" />
+                  <Spinner layoutX="129.0" layoutY="434.0" prefHeight="33.0" prefWidth="123.0" />
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear114" alignment="TOP_CENTER" layoutX="21.0" layoutY="439.0" prefHeight="23.0" prefWidth="108.0" text="Return Year:" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="123.0" layoutY="60.0" prefHeight="23.0" prefWidth="381.0" text="Construction in Progress">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField id="constructionFactor" fx:id="constructionFactor" layoutX="365.0" layoutY="94.0" prefHeight="33.0" prefWidth="77.0" promptText="construction factor" />
+                  <Label layoutX="206.0" layoutY="100.0" text="Market Value Factor: " />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="countyFileMaintenanceFreeport" text="Freeport ">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear6" alignment="TOP_CENTER" prefHeight="23.0" prefWidth="653.0" text="show county name, number, and return year here" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="CloseButton11" layoutX="645.0" layoutY="439.0" mnemonicParsing="false" text="Close" />
+                  <Spinner layoutX="122.0" layoutY="439.0" prefHeight="33.0" prefWidth="123.0" />
+                  <Label id="AssessorDisplayCountyReturnYear" fx:id="AssessorDisplayCountyReturnYear115" alignment="TOP_CENTER" layoutX="14.0" layoutY="444.0" prefHeight="23.0" prefWidth="108.0" text="Return Year:" textAlignment="CENTER" textFill="#080a59">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="231.0" layoutY="49.0" prefHeight="23.0" prefWidth="225.0" text="Freeport Exemption">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="157.0" layoutY="78.0" text="Important - Please verify these rates for accuracy." textAlignment="CENTER" textFill="#511212">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox id="freeportExemptionsApply" fx:id="freeportExemptionsApply" layoutX="196.0" layoutY="143.0" mnemonicParsing="false" text="Freeport Exemptions Apply to this county?" />
+                  <Label layoutX="190.0" layoutY="233.0" text="Raw materials and goods in process exemption rate:" />
+                  <Label layoutX="33.0" layoutY="286.0" text="Finished goods produced in GA within the last 12 months exemption rate:" />
+                  <Label alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="152.0" layoutY="331.0" prefHeight="49.0" prefWidth="434.0" text="Finished goods stored in GA with the last 12 months and destined for shipment out-of-state exemption rate:" wrapText="true" />
+                  <Label layoutX="22.0" layoutY="198.0" text="Freeport exemptions are expressed as a percentage (usually in increments of 20%)" textAlignment="CENTER" textFill="#511212">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="587.0" layoutY="227.0" prefHeight="33.0" prefWidth="41.0" />
+                  <Label layoutX="631.0" layoutY="233.0" text="\%">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="587.0" layoutY="280.0" prefHeight="33.0" prefWidth="41.0" />
+                  <Label layoutX="631.0" layoutY="286.0" text="\%">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="588.0" layoutY="337.0" prefHeight="33.0" prefWidth="41.0" />
+                  <Label layoutX="632.0" layoutY="343.0" text="\%">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
